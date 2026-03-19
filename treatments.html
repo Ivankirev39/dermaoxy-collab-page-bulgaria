@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script  src="js/main.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Терапии</title>
+</head>
+<body>
+
+
+
+<header class="sticky top-0 z-50 bg-[#7FA0AC] !py-3" style="font-family: var(--font-montserrat);">
+  <nav class="container mx-auto px-4">
+    <div class="lg:grid lg:grid-cols-3 lg:items-center">
+      <div class="flex justify-between items-center lg:justify-start">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center flex-shrink-0">
+          <img src="media/dermaoxy-logo-2025-outlines-FINAL.png" alt="dermaOXY" class="h-7 w-auto">
+        </a>
+
+        <!-- Hamburger menu (mobile only) -->
+        <button id="hamburger" class="text-[#F4F4F4] focus:outline-none lg:hidden" aria-label="Toggle menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path class="hamburger-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path class="hamburger-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation links -->
+      <div id="navMenu" class="hidden flex-col items-start lg:flex lg:flex-row lg:justify-center lg:gap-6 mt-4 lg:mt-0 lg:col-start-2">
+        <a href="index.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          За нас
+        </a>
+
+        <a href="treatments.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Терапии
+        </a>
+   
+        <a href="product-page-skin.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Грижа за кожата
+        </a>
+        
+        <a href="product-page-hair.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Грижа за косата
+        </a>
+      </div>
+
+      <div class="hidden lg:block"></div>
+    </div>
+  </nav>
+</header>
+
+<!-- hero section -->
+<section class="relative w-full h-[500px]">
+  <img src="media/treatments-hero-image.webp" alt="Treatments Hero Image" class="absolute inset-0 w-full h-full object-cover object-center" />
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+  
+  <!-- Hero content -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 px-4">
+    <h1 class="text-white text-7xl md:text-7xl lg:text-7xl font-bold text-center" style="font-family: var(--font-montserrat);">Терапии</h1>
+    
+  </div>
+</section>
+
+<!-- about section -->
+<section class="w-full" style="font-family: var(--font-montserrat);">
+  <div class="flex flex-col items-center justify-center w-full !mt-10 !mb-20 px-4">
+    <h2 class="!mx-6 text-3xl text-center font-semibold mb-8">
+      DermaOXY – терапии, които карат кожата ви да сияе
+    </h2>
+    <p class="text-lg text-center max-w-5xl leading-relaxed">
+      Терапиите на dermaOxy използват неинвазивна кислородна технология, която подпомага здравата и сияйна кожа. Чрез съчетаване на контролирано подаване на кислород с активни съставки, терапиите са насочени към хидратация, баланс на кожата и подобряване на нейната текстура. Решенията на dermaOxy са подходящи за различни типове кожа и се вписват безпроблемно в съвременните рутинни грижи за кожата.
+    </p>
+  </div>
+
+  <div class="mt-8 flex justify-center gap-32 w-full max-w-5xl mx-auto text-center">
+    <!-- Oxygen Treatment -->
+    <a href="oxy-treatment-subpage.html" class="flex flex-col items-center text-center cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+      <img src="media/icons/Oxy.webp" alt="Oxygen Treatment" class="w-30 h-30 mb-6">
+      <h3 class="text-xl font-medium">
+        Кислородна Терапия
+      </h3>
+    </a>
+
+    <!-- DermaSEMITA -->
+    <a href="dermasemita-treatment-subpage.html" class="flex flex-col items-center text-center cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+      <img src="media/icons/dermaSemita-icon.webp" alt="DermaSEMITA" class="w-30 h-30 mb-6">
+      <h3 class="text-xl font-medium">
+        DermaSEMITA
+      </h3>
+    </a>
+  </div>
+</section>
+
+
+<section class="w-full mt-15" style="font-family: var(--font-montserrat);">
+  <!-- Oxygen Treatment -->
+  <div class="grid md:grid-cols-2 gap-0">
+    <div class="relative h-full">
+      <img src="media/oxy.jpg" alt="Oxygen treatment being applied" class="w-full h-full object-cover object-center">
+    </div>
+    <div class="bg-white p-12 flex flex-col justify-center">
+      <h2 class="text-4xl font-bold mb-4">Кислородна Терапия</h2>
+      <h3 class="text-xl font-semibold mb-6">Намерете съвети за грижа за кожата, за да получите най-добрите резултати</h3>
+      <p class="text-gray-700 mb-8 leading-relaxed">
+        Кислородната концепция на DermaOXY е разработена да работи в хармония с естествените процеси на кожата, поради което се обръща специално внимание на подбора на съставките. Заедно тези внимателно подбрани съставки допринасят съществено за здравето, хидратацията и структурата на кожата.
+      </p>
+      <div>
+        <a href="oxy-treatment-subpage.html" class="px-8 py-3 bg-[#7FA0AC] rounded-full text-white font-semibold hover:bg-white hover:text-[#7FA0AC] 
+            hover:border hover:border-[#7FA0AC] transition-colors duration-200">
+          Научете повече
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DermaSEMITA LED Treatment -->
+  <div class="grid md:grid-cols-2 gap-0">
+    <div class="bg-white p-12 flex flex-col justify-center order-2 md:order-1">
+      <h2 class="text-4xl font-bold mb-4">DermaSEMITA</h2>
+      <h3 class="text-xl font-semibold mb-6">Терапия с LED светлини от dermaOXY</h3>
+      <p class="text-gray-700 mb-8 leading-relaxed">
+Кожата ни има способността да абсорбира светлина и да я преобразува в клетъчна енергия. Светлинната енергия стимулира митохондриите на клетките и увеличава производството на ATP. ATP (аденозинтрифосфат) съдържа химическа енергия и осигурява енергия за почти всички енергоемки процеси в организма, като производството на колаген, доставката на хранителни вещества и кръвообращението.      </p>
+      <div>
+        <a href="dermasemita-treatment-subpage.html" class="px-8 py-3 bg-[#7FA0AC] rounded-full text-white font-semibold hover:bg-white hover:text-[#7FA0AC] 
+            hover:border hover:border-[#7FA0AC] transition-colors duration-200">
+            Научете повече
+        </a>
+      </div>
+    </div>
+    <div class="relative h-96 md:h-auto order-1 md:order-2">
+      <img src="media/led.jpg" alt="LED light therapy device" class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-[#7FA0AC] text-white px-8 py-4" style="font-family: var(--font-montserrat);">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+      <!-- Logo section -->
+      <div class="flex items-start justify-center md:justify-start">
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 mt-10">
+            <img src="media/dermaoxy-whte-text-and-type-combined.png" alt="dermaOXY Logo" class="w-[170px] h-full"/>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact section -->
+      <div class="text-center md:text-left md:ml-5">
+        <h3 class="text-2xl font-semibold mb-4">Контакти</h3>
+        <p class="mb-2 text-lg">Tlf: +359 123 456 78</p>
+        <p class="mb-2 text-lg">interspabg@gmail.com</p>
+        
+        <h3 class="text-2xl font-semibold mt-4 mb-4">Адрес</h3>
+        <p class="text-lg">кв. Гоце Делчев, блок 50Е,</p>
+        <p class="text-lg">вход Б, ат. 2</p>
+      </div>
+      
+      <!-- Social Media section -->
+      <div class="text-center md:text-left md:ml-18">
+        <h3 class="text-2xl font-semibold mb-4">Социални Мрежи</h3>
+        <div class="flex flex-col items-center md:items-start gap-4">
+          <!-- social media icons -->
+           <a href="https://www.instagram.com/dermaoxy_bg/" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+             <img src="media/icons/instagram-brands-solid-full.svg" alt="Instagram Icon" class="w-12 h-12 md:ml-21 text-white"/>
+           </a>
+          <a href="https://www.facebook.com/dermaoxybulgaria/?locale=bg_BG" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+          <img src="media/icons/square-facebook-brands-solid-full.svg" alt="Facebook Icon" class="w-12 h-12 md:ml-21 text-white"/>
+          </a>
+          <a href="https://www.youtube.com/" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+            <img src="media/icons/youtube-brands-solid-full.svg" alt="Youtube Icon" class="w-12 h-12 md:ml-21 text-white"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+    <!-- Divider -->
+    <div>
+      <hr class="my-6 border-default sm:mx-auto lg:my-4" />
+      <p class="text-center text-lg">© 2026 dermaOXY България. Всички права запазени.</p>
+    </div>
+</footer>
+</body>
+</html>

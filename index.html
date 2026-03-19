@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>За нас</title>
+</head>
+<body>
+
+  
+<header class="sticky top-0 z-50 bg-[#7FA0AC] !py-3" style="font-family: var(--font-montserrat);">
+  <nav class="container mx-auto px-4">
+    <div class="lg:grid lg:grid-cols-3 lg:items-center">
+      <div class="flex justify-between items-center lg:justify-start">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center flex-shrink-0">
+          <img src="media/dermaoxy-logo-2025-outlines-FINAL.png" alt="dermaOXY" class="h-7 w-auto">
+        </a>
+
+        <!-- Hamburger menu (mobile only) -->
+        <button id="hamburger" class="text-[#F4F4F4] focus:outline-none lg:hidden" aria-label="Toggle menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path class="hamburger-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path class="hamburger-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation links -->
+      <div id="navMenu" class="hidden flex-col items-start lg:flex lg:flex-row lg:justify-center lg:gap-6 mt-4 lg:mt-0 lg:col-start-2">
+        <a href="index.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          За нас
+        </a>
+
+        <a href="treatments.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Терапии
+        </a>
+   
+        <a href="product-page-skin.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Грижа за кожата
+        </a>
+        
+        <a href="product-page-hair.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Грижа за косата
+        </a>
+      </div>
+
+      <div class="hidden lg:block"></div>
+    </div>
+  </nav>
+</header>
+
+<!-- hero section -->
+<section class="relative w-full h-[500px]">
+  <img src="media/about-us-hero-compressed.webp" alt="About Us Hero Image" class="absolute inset-0 w-full h-full object-cover object-center" />
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+  
+  <!-- Hero content -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 px-4">
+    <img src="media/derma-oxy-white-text-logo.png" alt="Company Logo" class="w-full max-w-[769px] h-auto"/>
+    <h1 class="text-white mt-5 text-3xl sm:text-4xl md:text-5xl font-bold text-center" style="font-family: var(--font-montserrat);">Кислородна грижа за кожата от Дания</h1>
+  </div>
+</section>
+
+<!-- about section -->
+<section class="w-full" style="font-family: var(--font-montserrat);">
+  <div class="flex flex-col items-center  justify-center w-full !mt-10 !mb-20 px-4">
+    <h2 class="!mx-6 text-3xl text-center font-semibold mb-8" >
+       Кои са DermaOxy?
+    </h2>
+    
+    <p class="text-lg  max-w-5xl text-center leading-relaxed">
+DermaOXY е марка на MedicTinedic ApS и включва козметични продукти за грижа за кожата, разработени и произведени в Дания. Те възстановяват здравето на кожата и противодействат на бръчките и сухотата чрез използването на естествени активни съставки.
+Терапиите и продуктите за грижа на DermaOXY осигуряват хидратация на кожата и скалпа с активна хиалуронова киселина, високо съдържание на антиоксиданти и активен комплекс от витамини, които стимулират собственото клетъчно обновяване и производството на колаген в кожата.    </p>
+  </div>
+</section>
+
+<!-- company philosophy section -->
+<section class="w-full" style="font-family: var(--font-montserrat);">
+  <div class="flex flex-col items-center justify-center w-full !mt-10 px-4">
+    <h2 class="!mx-6 text-3xl text-center font-semibold mb-8" >
+     Бъдеща грижа за кожата
+    </h2>
+  </div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
+    
+    <!-- Left side - Text content with blue background -->
+    <div class="bg-[#7FA0AC] flex items-center justify-center p-12 lg:p-16">
+      <div class="max-w-xl text-white space-y-8">
+        <p class="text-lg lg:text-xl leading-relaxed">
+DermaOXY подхожда с голямо уважение към естествената структура на кожата и чрез своите продукти цели да покаже, че анти-ейдж ефект може да бъде постигнат без козметични процедури. Затова в своите терапии използва кислород - чист кислород - който спомага за забавяне на процесите на стареене на кожата и стимулира производството на еластин и колаген.        </p>
+        
+        <p class="text-lg lg:text-xl leading-relaxed">
+         DermaOXY е част от бъдещето на грижата за кожата и разликата може да се види още след първата терапия. 
+        </p>
+      </div>
+    </div>
+    
+    <!-- Right side - Image -->
+    <div class="relative h-[400px] lg:h-auto">
+      <img 
+        src="media/future-skin-care-compressed.webp" 
+        alt="DermaOxy products and merchandise scattered around " 
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+    </div>
+    
+  </div>
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
+
+  <!-- Right side - Text content with blue background -->
+  <div class="bg-[#7FA0AC] flex items-center justify-center p-12 lg:p-16 lg:order-2">
+    <div class="max-w-xl text-white space-y-8">
+      <p class="text-lg lg:text-xl leading-relaxed">
+        Кислородната концепция на DermaOXY е разработена да работи в хармония с естествените процеси на кожата, поради което голямо внимание се отделя на внимателния подбор на съставките. Заедно, избраните съставки правят съществена разлика за здравето, хидратацията и структурата на кожата. Внимателно подбираме и комбинираме суровини с документирани анти-ейдж ефекти, фокусирайки се върху намаляването на бръчките и фините линии, като същевременно насърчаваме видимо по-здрава кожа.
+      
+        Кислородното лечение е ефективна и безопасна процедура, напълно неинвазивна и без инжекции.    
+      </p>
+    </div>
+  </div>
+
+  <!-- Left side - Video -->
+    <div class="relative h-[400px] lg:h-auto lg:order-1">
+    <video src="media/video/Face-insta-video.mp4" controls class="absolute inset-0 w-full h-full object-cover">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</div>
+
+
+
+</section>
+
+<!-- FAQ section -->
+
+<section class="w-full py-12" style="font-family: var(--font-montserrat);">
+  <div class="flex flex-col items-center justify-center w-full px-4">
+    <h2 class="text-3xl text-center font-semibold mb-4">
+     Често задавани въпроси
+    </h2>
+    
+    <p class="text-xl max-w-2xl text-center px-10 mb-10">
+     Не сте напълно сигурни за DermaOxy? Вижте често задаваните въпроси, свързани с компанията! 
+    </p>
+
+
+  </div>
+
+
+  <!-- FAQ Items Container -->
+  <div class="max-w-6xl mx-auto px-4">
+    
+    <!-- FAQ Item 1 -->
+    <div class="border-t-3 border-b-3 border-[#7FA0AC]">
+      <button 
+        onclick="toggleFaq(this)" 
+        class="w-full flex items-center justify-between py-6 text-left hover:opacity-80 transition-opacity"
+      >
+        <h3 class="text-xl font-semibold pr-4">
+          Как работят продуктите на DermaOxy?
+        </h3>
+        
+        <div class="flex-shrink-0">
+          <svg class="plus-icon w-8 h-8 text-[#7FA0AC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+          </svg>
+          <svg class="minus-icon w-8 h-8 text-[#7FA0AC] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 12H4"/>
+          </svg>
+        </div>
+      </button>
+      
+      <div class="answer-content hidden pb-6">
+        <p class="text-lg leading-relaxed">
+    Продуктите на DermaOXY са създадени да осигуряват интензивна хидратация, кислород и подхранващи съставки на кожата. Те помагат за укрепване на естествения баланс на кожата, придават свеж блясък и намаляват видимите признаци на стареене.        </p>
+      </div>
+    </div>
+    
+    <!-- FAQ Item 2 -->
+    <div class="border-b-3 border-[#7FA0AC]">
+      <button 
+        onclick="toggleFaq(this)" 
+        class="w-full flex items-center justify-between py-6 text-left hover:opacity-80 transition-opacity"
+      >
+          <h3 class="text-xl font-semibold pr-4">
+          След колко време мога да очаквам резултати?
+        </h3>
+        
+        <div class="flex-shrink-0">
+          <svg class="plus-icon w-8 h-8 text-[#7FA0AC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+          </svg>
+          <svg class="minus-icon w-8 h-8 text-[#7FA0AC] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 12H4"/>
+          </svg>
+        </div>
+      </button>
+      
+      <div class="answer-content hidden pb-6">
+        <p class="text-xl leading-relaxed">
+Само след няколко седмици много от потребителите усещат по-хидратирана, по-гладка и по-свежа кожа. При редовна употреба резултатите стават все по-видими.
+        </p>
+      </div>
+    </div>
+
+   <div class="border-b-3 border-[#7FA0AC]">
+      <button 
+        onclick="toggleFaq(this)" 
+        class="w-full flex items-center justify-between py-6 text-left hover:opacity-80 transition-opacity"
+      >
+          <h3 class="text-xl font-semibold pr-4">
+         Мога ли да използвам продуктите ако имам чувствителна кожа?
+        </h3>
+        
+        <div class="flex-shrink-0">
+          <svg class="plus-icon w-8 h-8 text-[#7FA0AC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+          </svg>
+          <svg class="minus-icon w-8 h-8 text-[#7FA0AC] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 12H4"/>
+          </svg>
+        </div>
+      </button>
+      
+      <div class="answer-content hidden pb-6">
+        <p class="text-xl leading-relaxed">
+        Да, продуктите са нежни и подходящи за всички типове кожа – включително чувствителна.
+        </p>
+      </div>
+    </div>
+
+
+      <div class="border-b-3 border-[#7FA0AC]">
+      <button 
+        onclick="toggleFaq(this)" 
+        class="w-full flex items-center justify-between py-6 text-left hover:opacity-80 transition-opacity"
+      >
+          <h3 class="text-xl font-semibold pr-4">
+        Mога ли да комбинирам продуктите с други брандове?
+        </h3>
+        
+        <div class="flex-shrink-0">
+          <svg class="plus-icon w-8 h-8 text-[#7FA0AC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+          </svg>
+          <svg class="minus-icon w-8 h-8 text-[#7FA0AC] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 12H4"/>
+          </svg>
+        </div>
+      </button>
+      
+      <div class="answer-content hidden pb-6">
+        <p class="text-xl leading-relaxed">
+       Да, продуктите са създадени така, че лесно да се комбинират с други серии за грижа за кожата.
+      </div>
+    </div>
+
+     <div class="border-b-3 border-[#7FA0AC]">
+      <button 
+        onclick="toggleFaq(this)" 
+        class="w-full flex items-center justify-between py-6 text-left hover:opacity-80 transition-opacity"
+      >
+          <h3 class="text-xl font-semibold pr-4">
+         Колко често трябва да използвам продуктите?
+        </h3>
+        
+        <div class="flex-shrink-0">
+          <svg class="plus-icon w-8 h-8 text-[#7FA0AC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+          </svg>
+          <svg class="minus-icon w-8 h-8 text-[#7FA0AC] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 12H4"/>
+          </svg>
+        </div>
+      </button>
+      
+      <div class="answer-content hidden pb-6">
+        <p class="text-xl leading-relaxed">
+      За оптимални резултати препоръчваме ежедневна употреба – сутрин и вечер.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- split selector section -->
+<section class="split-selector">
+ <a href="product-page-skin.html" class="bg left">
+  <h2 class="label skin">ГРИЖА ЗА<br>КОЖАТА</h2>
+</a>
+
+  <a href="product-page-hair.html" class="bg right">
+    <h2 class="label hair ">ГРИЖА ЗА КОСАТА</h2>
+  </a>
+</section>
+
+
+<footer class="bg-[#7FA0AC] text-white px-8 py-4" style="font-family: var(--font-montserrat);">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+      <!-- Logo section -->
+      <div class="flex items-start justify-center md:justify-start">
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 mt-10">
+            <img src="media/dermaoxy-whte-text-and-type-combined.png" alt="dermaOXY Logo" class="w-[170px] h-full"/>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact section -->
+      <div class="text-center md:text-left md:ml-5">
+        <h3 class="text-2xl font-semibold mb-4">Контакти</h3>
+        <p class="mb-2 text-lg">Tlf: +359 123 456 78</p>
+        <p class="mb-2 text-lg">interspabg@gmail.com</p>
+        
+        <h3 class="text-2xl font-semibold mt-4 mb-4">Адрес</h3>
+        <p class="text-lg">кв. Гоце Делчев, блок 50Е,</p>
+        <p class="text-lg">вход Б, ат. 2</p>
+      </div>
+      
+      <!-- Social Media section -->
+      <div class="text-center md:text-left md:ml-18">
+        <h3 class="text-2xl font-semibold mb-4">Социални Мрежи</h3>
+        <div class="flex flex-col items-center md:items-start gap-4">
+          <!-- social media icons -->
+           <a href="https://www.instagram.com/dermaoxy_bg/" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+             <img src="media/icons/instagram-brands-solid-full.svg" alt="Instagram Icon" class="w-12 h-12 md:ml-21 text-white"/>
+           </a>
+          <a href="https://www.facebook.com/dermaoxybulgaria/?locale=bg_BG" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+          <img src="media/icons/square-facebook-brands-solid-full.svg" alt="Facebook Icon" class="w-12 h-12 md:ml-21 text-white"/>
+          </a>
+          <a href="https://www.youtube.com/" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+            <img src="media/icons/youtube-brands-solid-full.svg" alt="Youtube Icon" class="w-12 h-12 md:ml-21 text-white"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+    <!-- Divider -->
+    <div>
+      <hr class="my-6 border-default sm:mx-auto lg:my-4" />
+      <p class="text-center text-lg">© 2026 dermaOXY България. Всички права запазени.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

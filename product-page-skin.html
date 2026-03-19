@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Skin Care</title>
+</head>
+<body>
+
+
+<header class="sticky top-0 z-50 bg-[#7FA0AC] !py-3" style="font-family: var(--font-montserrat);">
+  <nav class="container mx-auto px-4">
+    <div class="lg:grid lg:grid-cols-3 lg:items-center">
+      <div class="flex justify-between items-center lg:justify-start">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center flex-shrink-0">
+          <img src="media/dermaoxy-logo-2025-outlines-FINAL.png" alt="dermaOXY" class="h-7 w-auto">
+        </a>
+
+        <!-- Hamburger menu (mobile only) -->
+        <button id="hamburger" class="text-[#F4F4F4] focus:outline-none lg:hidden" aria-label="Toggle menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path class="hamburger-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path class="hamburger-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation links -->
+      <div id="navMenu" class="hidden flex-col items-start lg:flex lg:flex-row lg:justify-center lg:gap-6 mt-4 lg:mt-0 lg:col-start-2">
+        <a href="index.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          За нас
+        </a>
+
+        <a href="treatments.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Терапии
+        </a>
+   
+        <a href="product-page-skin.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Грижа за кожата
+        </a>
+        
+        <a href="product-page-hair.html" class="text-[#F4F4F4] text-xl font-bold no-underline px-4 py-3 lg:px-4 lg:py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent whitespace-nowrap w-full lg:w-auto">
+          Грижа за косата
+        </a>
+      </div>
+
+      <div class="hidden lg:block"></div>
+    </div>
+  </nav>
+</header>
+
+ <!-- Products Grid -->
+<section class="w-full mt-10" style="font-family: var(--font-montserrat);">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    
+    <!-- Product 1 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/peptide-day-cream.png" alt="Peptide Day Cream" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Peptide Day Cream</h3>
+    </a>
+    
+    <!-- Product 2 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/peptide-night-cream.png" alt="Peptide Night Cream" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Peptide Night Cream</h3>
+    </a>
+    
+    <!-- Product 3 -->
+      <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/x-link-collagen-cream.png" alt="X-Link Collagen Cream" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">X-Link Collagen Cream</h3>
+    </a>
+
+      <!-- Product 4 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/a-link-defence-booster.png" alt="A-Link Defence Booster" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">A-Link Defence Booster</h3>
+    </a>
+    
+     <!-- Product 5 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/balancing-cream.png" alt="Balancing Cream" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Balancing Cream</h3>
+    </a>
+    
+     <!-- Product 6 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/moisturizing-gel.png" alt="Moisturizing Gel" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Moisturizing Gel</h3>
+    </a>
+
+        <!-- Product 7 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/x-link-peptide-eye-gel.png" alt="X-Link Peptide Eye Gel" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">X-Link Peptide Eye Gel</h3>
+    </a>
+    
+    
+        <!-- Product 8 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/peptide-eye-cream.png" alt="Peptide Eye Cream" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Peptide Eye Cream</h3>
+    </a>
+    
+        <!-- Product 9 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/intensive-peptide-serum.png" alt="Intensive Peptide Serum" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Intensive Peptide Serum</h3>
+    </a>
+       
+          <!-- Product 10 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/intensive-anti-age-serum.png" alt="Intensive Anti-Age Serum" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Intensive Anti-Age Serum</h3>
+    </a>
+       
+        <!-- Product 11 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/intensive-moisturizing-serum.png" alt="Intensive Moisturizer Serum" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Intensive Moisturizer Serum</h3>
+    </a>
+       
+        <!-- Product 12 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/intensive-balancing-serum.png" alt="Intensive Balancing Serum" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Intensive Balancing Serum</h3>
+    </a>
+
+        <!-- Product 13 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/exfoliating-scrub.png" alt="Exfoliating Scrub" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Exfoliating Scrub</h3>
+    </a>
+
+          <!-- Product 14 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/facewash.png" alt="Face Wash" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Face Wash</h3>
+    </a>
+
+         <!-- Product 15 -->
+    <a href="product-details.html" class="bg-gray-100 p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
+      <img src="media/products/facecleanser.png" alt="Face Cleanser" class="w-full max-h-[340px] object-contain mb-4" />
+      <h3 class="text-xl font-bold text-center">Face Cleanser</h3>
+    </a>
+
+  </div>
+</section>
+
+<footer class="bg-[#7FA0AC] text-white px-8 py-4" style="font-family: var(--font-montserrat);">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+      <!-- Logo section -->
+      <div class="flex items-start justify-center md:justify-start">
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 mt-10">
+            <img src="media/dermaoxy-whte-text-and-type-combined.png" alt="dermaOXY Logo" class="w-[170px] h-full"/>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact section -->
+      <div class="text-center md:text-left md:ml-5">
+        <h3 class="text-2xl font-semibold mb-4">Контакти</h3>
+        <p class="mb-2 text-lg">Tlf: +359 123 456 78</p>
+        <p class="mb-2 text-lg">interspabg@gmail.com</p>
+        
+        <h3 class="text-2xl font-semibold mt-4 mb-4">Адрес</h3>
+        <p class="text-lg">кв. Гоце Делчев, блок 50Е,</p>
+        <p class="text-lg">вход Б, ат. 2</p>
+      </div>
+      
+      <!-- Social Media section -->
+      <div class="text-center md:text-left md:ml-18">
+        <h3 class="text-2xl font-semibold mb-4">Социални Мрежи</h3>
+        <div class="flex flex-col items-center md:items-start gap-4">
+          <!-- social media icons -->
+           <a href="https://www.instagram.com/dermaoxy_bg/" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+             <img src="media/icons/instagram-brands-solid-full.svg" alt="Instagram Icon" class="w-12 h-12 md:ml-21 text-white"/>
+           </a>
+          <a href="https://www.facebook.com/dermaoxybulgaria/?locale=bg_BG" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+          <img src="media/icons/square-facebook-brands-solid-full.svg" alt="Facebook Icon" class="w-12 h-12 md:ml-21 text-white"/>
+          </a>
+          <a href="https://www.youtube.com/" class="cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+            <img src="media/icons/youtube-brands-solid-full.svg" alt="Youtube Icon" class="w-12 h-12 md:ml-21 text-white"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+    <!-- Divider -->
+    <div>
+      <hr class="my-6 border-default sm:mx-auto lg:my-4" />
+      <p class="text-center text-lg">© 2026 dermaOXY България. Всички права запазени.</p>
+    </div>
+</footer>
+
+</body>
+</html>
