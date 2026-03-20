@@ -108,8 +108,8 @@
 
   .bg.right .label.hair {
     position: absolute;
-    top: 85%; 
-    left: 50%;
+    top: 75%; 
+    left: 55%;
     transform: translate(-50%, -50%);
   }
 }
